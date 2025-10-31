@@ -2,20 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSS Box Model</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Demo</title>
+  <style>
+    body {
+      margin: 20px;
+      background-color: white;
+      font-family: monospace;
+    }
+
+    .outer-box {
+      background-color: blue;
+      border: 15px solid blue;
+      margin: 20px;
+      padding: 50px;
+      color: lightblue;
+      width: 300px;
+    }
+
+    p {
+      background-color: lightseagreen;
+      color: black;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
 
-  <div style="
-    width: 300px;
-    background-color: lightblue;
-    border: 15px solid blue;
-    padding: 50px;
-    margin: 20px;
-    box-sizing: content-box;
-    font-family: Arial, sans-serif;
-  ">
-    This is a demo of box model, try to replicate this box model in Html & Css and pass all the test cases.
+  <div class="outer-box">
+    <p>
+      This is a demo of box model try to replicate this box model in Html and Css 
+      and try to pass all the test cases.
+    </p>
   </div>
 
 </body>
